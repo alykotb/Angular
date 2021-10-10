@@ -1,0 +1,11 @@
+<app-header (selected_feature)='OnNavigate($event)'></app-header>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 >I am in the app component!</h1>
+            <hr>
+            <app-recipes *ngIf='SelectedFeature==="recipe"'></app-recipes>
+            <app-shopping-list *ngIf='SelectedFeature==="shoppinglist"'></app-shopping-list>
+        </div>      
+    </div>        
+  </div>  
